@@ -3,6 +3,8 @@
 
 <title>{% block title %}PSUSphere{% endblock %}</title>
 
+<a href = "{% url 'organization-list' %}">
+
 <link rel="stylesheet" href="{% static 'css/bootsrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'css/ready.css' %}">
 <link rel="stylesheet" href="{% static 'css/demo.css' %}">
@@ -21,11 +23,23 @@
 <script src="{% static 'js/plugin/jquery-scrollbar/jquery.scrollbar.min.js' %}"></script>
 <script src="{% static 'js/ready.min.js' %}"></script>
 
-<img src="{% static 'img/profile.jpg')" alt="user-img" width="36" class="img-circle>
+<img src="{% static 'img/profile.jpg' %}" alt="user-img" width="36" class="img-circle">
 
 <div class="u-img"><img src="{ static 'img/profile.jpg')" alt="user"></div>
 
 <img src="{& static 'img/profile.jpg')">
+
+<p>Dashboard</p>
+
+<p>Organization</p>
+
+<p>org. Members</p>
+
+<p>Student</p>
+
+<p>College</p>
+
+
 
 <div class="main-panel">
     {% block content %}
